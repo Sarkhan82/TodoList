@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: teal;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.876);
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  min-height: 600px;
+}
+.todo-card {
+  border: 3px solid teal;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  min-width: 500px;
+  min-height: 400px;
+  background: rgba(32, 0, 32, 0.758);
+  border-radius: 20px;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+  border-radius: 20px;
+  background: rgb(6, 0, 6);
+  padding: 10px;
+  border: 1px solid rgb(58, 126, 126);
+}
+
+input[type="text"] {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.558);
+  padding: 10px;
+  border: 1px solid teal;
+}

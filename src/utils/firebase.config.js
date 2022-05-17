@@ -3,7 +3,7 @@ import "firebase/compat/auth";
 import { getFirestore } from "@firebase/firestore";
 
 const app = firebase.initializeApp({
-  apiKey: process.env.REACT_APP_API_KEY,
+  apiKey: "AIzaSyDewiZpdSnQ-4hUlDbF-WXfXKlhGuV0lJc",
   authDomain: "todolist-872cf.firebaseapp.com",
   projectId: "todolist-872cf",
   storageBucket: "todolist-872cf.appspot.com",
