@@ -1,9 +1,15 @@
 import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { auth } from "../utils/firebase.config";
 
 const SignUp = () => {
   const registerEmail = useRef();
   const registerPassword = useRef();
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  };
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -34,7 +40,7 @@ const SignUp = () => {
             required
             ref={registerPassword}
           />
-          <input type="submit" value="S'inscrire" />
+          <input type="submit" value="S'inscrire" onClick={handleClick} />
         </form>
       </div>
     </div>
