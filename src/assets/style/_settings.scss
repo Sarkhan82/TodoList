@@ -1,0 +1,77 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: "top" ;
+    src: url(../font/Oswald-VariableFont_wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: url(../images/bg.jpg) center/cover fixed;
+    text-align: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    color: rgb(246, 246, 246);
+    font-family: "top";
+}
+li {
+    list-style: none;
+}
+.todo-container {
+    @include center();
+    min-height: 100vh;
+}
+.todo-card {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 600px;
+    background: rgba(0, 0, 0, 0.469);
+    border-radius: 40px;
+
+    input[type="text"] {
+        border-radius: 50px;
+        height: 40px;
+        width: 200px;
+    }
+    input[type="submit"] {
+        height: 40px;
+        width: 80px;
+        border-radius: 50px;
+        margin-left: 25px 
+    }
+}
+form {
+    @include center();
+    height: 150px;
+}
+ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    li {
+        background: rgba(89, 88, 88, 0.6);
+        height: 40px;
+        width: 500px;
+        border: 1px solid white;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 90% 10%;
+        align-items: center;
+        text-align: left;
+        padding-left: 30px;
+        border-radius: 4px;
+
+        i {
+
+        }
+    }
+}

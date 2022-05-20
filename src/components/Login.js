@@ -1,7 +1,6 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useRef, useState } from "react";
 import { auth } from "../utils/firebase.config";
-import style from "./Login.css";
 
 const Login = () => {
   const loginEmail = useRef();

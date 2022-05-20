@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-import { auth } from "../utils/firebase.config";
+import React, { useEffect, useState } from "react";
+import { auth, db } from "../utils/firebase.config";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import Login from "../components/Login";
 import CreateTask from "../components/CreateTask";
-import style from "../App.css";
 import { NavLink } from "react-router-dom";
 import List from "../components/List";
+import { collection, getDocs } from "firebase/firestore";
+import { getTasks } from "../feature/task.slice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Home = () => {
   const [user, setUser] = useState(null);
